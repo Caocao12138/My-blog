@@ -1,0 +1,22 @@
+// 提供各种混合样式
+
+/* #自我居中样式    .self-center
+@pos: 
+    默认值: relative
+    参数值: absolute
+*/
+.self-center(@pos: absolute) {
+    position: @pos;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* #填满父容器  .self-fill*/
+.self-fill(@pos: absolute) {
+    position: @pos;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
